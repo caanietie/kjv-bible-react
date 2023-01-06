@@ -1,6 +1,28 @@
 {
-  "name": "my_app",
+  "author": "Anietie",
+  "name": "KJV Bible",
   "version": "0.1.0",
+  "description": "King James Version of the Bible",
+  "sideEffects": false,
+  "main": "src/index.js",
+  "license": "MIT",
+  "files": [
+    "public",
+    "src",
+    "src/component",
+    "README.md"
+  ],
+  "repository": "https://github.com/caanietie/kjv-bible-react",
+  "keywords": [
+    "react",
+    "kjv",
+    "bible",
+    "kjv bible",
+    "king james version",
+    "king james bible",
+    "Anietie",
+    "caanietie"
+  ],
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
@@ -30,8 +52,8 @@
       "not op_mini all"
     ],
     "development": [
-      "last 1 chrome version",
       "last 1 firefox version",
+      "last 1 chrome version",
       "last 1 safari version"
     ]
   }

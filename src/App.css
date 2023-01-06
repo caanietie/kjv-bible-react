@@ -1,38 +1,93 @@
-.App {
+.searchComponent_bookName {
+  margin: 5px;
+  width: 120px;
+  padding: 5px;
+  border-radius: 5px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
+.searchComponent_chapter {
+  width: 60px;
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.searchComponent_submitRequest {
+  width: 50px;
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+}
+
+.chapterComponent__zoom {
+  cursor: pointer;
+  border-radius: 10px;
+  border-width: 0.5px;
+  border-style: solid;
+}
+
+.cno {
+  font-size: 25px;
+  display: inline;
+}
+
+[id="1"] {
+  display: inline;
+}
+
+/**
+[id="1"]>:first-child:before{
+	content: "1";
+}
+**/
+.v {
+  padding: 5px;
+}
+
+.v>:first-child {
+  margin-right: 10px;
+}
+
+.redtxt {
+  color: crimson
+}
+
+.spinner-img {
+  width: 50px;
   pointer-events: none;
+  margin: 50px calc(50% - 50px);
+  animation: spinner-image-spin infinite 1s linear;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
+@keyframes spinner-image-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.prevNextComponent {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  justify-content: space-around;
+}
+
+.prevNextComponent_prevNext,
+.prevNextComponent_prevNext {
+  display: flex;
+  flex-direction: column;
+}
+
+.footerComponent {
+  padding: 2%;
+  display: flex;
+  border-width: 1.5px;
+  flex-direction: column;
+  border-color: rgb(5, 95, 130);
 }
